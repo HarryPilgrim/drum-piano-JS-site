@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles_piano.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+
+<body>
+    <h1 id="title">Piano</h1>
+    <button id="goToPage1">Go to Page 1</button>
+
+<div style="display:inline">
+    <div class="piano set" style="width:100%;">
+            <div data-note="C" class="key white"><p class="white-writing">Z</p></div>
+            <div data-note="C_s" class="key black"><p class="black-writing">S</p></div>
+            <div data-note="D" class="key white"><p class="white-writing">X</p></div>
+            <div data-note="D_s" class="key black"><p class="black-writing">D</p></div>
+            <div data-note="E" class="key white"><p class="white-writing">C</p></div>
+            <div data-note="F" class="key white"><p class="white-writing">V</p></div>
+            <div data-note="F_s" class="key black"><p class="black-writing">G</p></div>
+            <div data-note="G" class="key white"><p class="white-writing">B</p></div>
+            <div data-note="G_s" class="key black"><p class="black-writing">H</p></div>
+            <div data-note="A" class="key white"><p class="white-writing">N</p></div>
+            <div data-note="A_s" class="key black"><p class="black-writing">J</p></div>
+            <div data-note="B" class="key white"><p class="white-writing">M</p></div>
+
+    </div>
+
+</div>
+
+<div class="track-options">
+    <label id="multiLabel" class="labels" for="multiButton">make your piano piece: </label>
+    <input class="multiButton">
+
+    <label for="gapDuration" id="gapDurationLabel" class="labels">gap between notes, 0.4-1 (secs)</label>
+    <input type="number" id="gapDuration" name="gapDuration" class="gapDuration" min="0.4" max="1" value="0.5" step="0.01">
+
+    <button id="multiButtonSubmit" class="multiSubmit">make music</button>
+
+    <button id="saveButton" class="saveButton">save piano piece</button>
+  </div>
+
+    <audio id="C" class="z Z" src="piano_sounds/C.mp3"></audio>
+    <audio id="C_s" class="s S" src="piano_sounds/C_s.mp3"></audio>
+    <audio id="D" class="x X" src="piano_sounds/D.mp3"></audio>
+    <audio id="D_s" class="d D" src="piano_sounds/D_s.mp3"></audio>
+    <audio id="E" class="c C" src="piano_sounds/E.mp3"></audio>
+    <audio id="F" class="v V" src="piano_sounds/F.mp3"></audio>
+    <audio id="F_s" class="g G" src="piano_sounds/F_s.mp3"></audio>
+    <audio id="G" class="b B" src="piano_sounds/G.mp3"></audio>
+    <audio id="G_s" class="h H" src="piano_sounds/G_s.mp3"></audio>
+    <audio id="A" class="n N" src="piano_sounds/A.mp3"></audio>
+    <audio id="A_s" class="j J" src="piano_sounds/A_s.mp3"></audio>
+    <audio id="B" class="m M" src="piano_sounds/B.mp3"></audio>
+
+
+    <script src="js/piano.js"></script>
+</body>
+</html>

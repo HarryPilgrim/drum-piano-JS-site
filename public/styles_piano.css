@@ -1,0 +1,101 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+#title {
+  margin-bottom: 10px;
+}
+
+
+body {
+    text-align: center;
+    background-color: #283149;
+    margin:0;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .piano {
+    display: flex;
+
+  }
+
+  .key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+  }
+
+  .white {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  .white.active {
+    background-color: #ccc;
+  }
+
+  .black {
+    --width: 60px;
+    background-color: black;
+    margin-right: calc(var(--width)/ -2);
+    margin-left: calc(var(--width)/ -2);
+    z-index: 2;
+  }
+
+  .black.active {
+    background-color: #333;
+  }
+
+  .white-writing {
+    color:black;
+  }
+
+
+  .black-writing {
+    color:white;
+  }
+
+  
+  h1 {
+    font-size: 5rem;
+    color: #DBEDF3;
+    font-family: "Arvo", cursive;
+    text-shadow: 3px 0 #DA0463;
+  
+  }
+  
+  footer {
+    color: #DBEDF3;
+    font-family: sans-serif;
+  }
+  
+
+  
+  .set {
+    margin: 10% auto;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+  
+  .red {
+    color: red;
+  }
+
+  
+  .labels {
+    color: white;
+  
+  }
