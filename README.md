@@ -12,5 +12,6 @@ you can write a track (at the bottom), choose how long between notes, and then p
 ![drumpiano2](https://github.com/user-attachments/assets/508f626f-e26a-4efc-baae-9738adb8d200)
 
 
-#what I would like to do
+## what I would like to do
+
 I want to figure out a way of saving the tracks that people have written for a later date. i think this would/could be stored locally, but I haven't figured out yet a good way to do that.
